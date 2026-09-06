@@ -27,6 +27,13 @@ export const metadata: Metadata = {
   creator: "Nivor Soluções Digitais",
   publisher: "Nivor Soluções Digitais",
   alternates: { canonical: "/" },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-icon.png", type: "image/png" }],
+  },
   openGraph: {
     type: "website",
     locale: "pt_BR",
