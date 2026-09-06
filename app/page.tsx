@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BadgeCheck, BarChart3, Check, ChevronRight, Clock3, LayoutDashboard, MessageCircle, PackageOpen, Palette, Search, ShoppingBag, Smartphone, Sparkles, Tags, Zap, type LucideIcon } from "lucide-react";
+import { ArrowRight, BarChart3, Check, ChevronRight, Clock3, LayoutDashboard, MessageCircle, PackageOpen, Palette, Search, ShoppingBag, Smartphone, Sparkles, Tags, Zap, type LucideIcon } from "lucide-react";
 import { ScreenCard } from "@/components/ScreenCard";
 
 const demoUrl = "https://cardapio-digital-eight-sigma.vercel.app/nivor-buguer";
@@ -90,8 +90,7 @@ export default function Home() {
           </div>
 
           <div className="hero-visual" aria-label="Prévia do Cardápio Digital Nivor">
-            <div className="floating-chip chip-one"><BadgeCheck size={18} /> Cardápio aberto</div>
-            <div className="floating-chip chip-two"><MessageCircle size={18} /> Pedido no WhatsApp</div>
+
             <ScreenCard src="/screens/cardapio-home.webp" alt="Tela inicial do cardápio digital Nivor" priority className="hero-phone-main" />
             <ScreenCard src="/screens/painel-dashboard.webp" alt="Painel administrativo do cardápio Nivor" priority className="hero-phone-back" />
           </div>
@@ -143,7 +142,7 @@ export default function Home() {
             <h2>Seu produto merece ser desejado antes mesmo da primeira mordida.</h2>
             <p>Fotos grandes, preços claros, promoções visíveis e uma navegação feita para tela pequena. A ideia é simples: facilitar a escolha e reduzir atrito até o pedido.</p>
             <ul className="check-list"><li><Check /> Visual moderno e responsivo</li><li><Check /> Produtos em destaque</li><li><Check /> Carrinho organizado</li><li><Check /> Observações e detalhes do item</li></ul>
-            <a href={demoUrl} target="_blank" rel="noreferrer" className="text-link">Abrir demonstração real <ArrowRight size={18}/></a>
+            <a href={demoUrl} target="_blank" rel="noreferrer" className="text-link">Abrir demonstração real <ArrowRight size={18} /></a>
           </div>
           <div className="screen-gallery">
             <ScreenCard src="/screens/cardapio-produtos.webp" alt="Produtos no cardápio digital Nivor" />
@@ -164,10 +163,10 @@ export default function Home() {
             <h2>Um painel que você consegue usar no próprio celular.</h2>
             <p>Você não precisa entrar em um sistema pesado para fazer uma alteração simples. O painel concentra o que importa para manter seu cardápio atualizado e acompanhar a operação.</p>
             <div className="mini-features">
-              <div><Clock3/><span><strong>Tempo real</strong><small>Atualize informações do catálogo sem refazer seu cardápio.</small></span></div>
-              <div><PackageOpen/><span><strong>Produtos</strong><small>Edite itens, preços e disponibilidade.</small></span></div>
-              <div><Tags/><span><strong>Categorias</strong><small>Mantenha o cardápio organizado para o cliente.</small></span></div>
-              <div><BarChart3/><span><strong>Visão geral</strong><small>Acompanhe os indicadores disponíveis no painel.</small></span></div>
+              <div><Clock3 /><span><strong>Tempo real</strong><small>Atualize informações do catálogo sem refazer seu cardápio.</small></span></div>
+              <div><PackageOpen /><span><strong>Produtos</strong><small>Edite itens, preços e disponibilidade.</small></span></div>
+              <div><Tags /><span><strong>Categorias</strong><small>Mantenha o cardápio organizado para o cliente.</small></span></div>
+              <div><BarChart3 /><span><strong>Visão geral</strong><small>Acompanhe os indicadores disponíveis no painel.</small></span></div>
             </div>
           </div>
         </div>
@@ -193,9 +192,9 @@ export default function Home() {
             <div className="price"><span>R$</span><strong>79</strong><sup>,90</sup><em>/mês</em></div>
             <div className="daily">menos de R$ 2,70 por dia</div>
             <ul>
-              <li><Check/> Cardápio digital responsivo</li><li><Check/> Painel administrativo</li><li><Check/> Produtos e categorias</li><li><Check/> Atualização de preços e disponibilidade</li><li><Check/> Fluxo de pedidos</li><li><Check/> Sem taxa de implantação</li><li><Check/> Cancele quando quiser</li>
+              <li><Check /> Cardápio digital responsivo</li><li><Check /> Painel administrativo</li><li><Check /> Produtos e categorias</li><li><Check /> Atualização de preços e disponibilidade</li><li><Check /> Fluxo de pedidos</li><li><Check /> Sem taxa de implantação</li><li><Check /> Cancele quando quiser</li>
             </ul>
-            <Link href={checkoutUrl} className="button button-primary button-wide">Quero começar agora <ArrowRight size={19}/></Link>
+            <Link href={checkoutUrl} className="button button-primary button-wide">Quero começar agora <ArrowRight size={19} /></Link>
             {!process.env.NEXT_PUBLIC_CHECKOUT_URL && <small className="checkout-note">Checkout será conectado quando a oferta for cadastrada na plataforma.</small>}
           </div>
         </div>
@@ -205,7 +204,7 @@ export default function Home() {
         <div className="container faq-wrap">
           <div className="section-heading"><span className="section-kicker">Dúvidas frequentes</span><h2>Antes de começar, você pode querer saber.</h2></div>
           <div className="faq-list">
-            {faq.map(([q,a]) => <details key={q}><summary>{q}<span>+</span></summary><p>{a}</p></details>)}
+            {faq.map(([q, a]) => <details key={q}><summary>{q}<span>+</span></summary><p>{a}</p></details>)}
           </div>
         </div>
       </section>
@@ -213,13 +212,13 @@ export default function Home() {
       <section className="final-cta">
         <div className="container final-card">
           <div><span className="section-kicker">Seu próximo cardápio começa aqui</span><h2>Deixe o improviso para trás e apresente seu negócio do jeito que ele merece.</h2></div>
-          <div className="final-actions"><Link href={checkoutUrl} className="button button-primary">Começar por R$ 79,90/mês <ArrowRight size={19}/></Link><a href={demoUrl} target="_blank" rel="noreferrer" className="button button-ghost">Testar demonstração</a></div>
+          <div className="final-actions"><Link href={checkoutUrl} className="button button-primary">Começar por R$ 79,90/mês <ArrowRight size={19} /></Link><a href={demoUrl} target="_blank" rel="noreferrer" className="button button-ghost">Testar demonstração</a></div>
         </div>
       </section>
 
       <footer>
         <div className="container footer-inner">
-          <div className="brand"><Image src="/screens/logo-nivor.webp" width={42} height={42} alt="Logo da Nivor" className="brand-logo"/><span><strong>NIVOR</strong><small>Soluções Digitais</small></span></div>
+          <div className="brand"><Image src="/screens/logo-nivor.webp" width={42} height={42} alt="Logo da Nivor" className="brand-logo" /><span><strong>NIVOR</strong><small>Soluções Digitais</small></span></div>
           <p>© {new Date().getFullYear()} Nivor Soluções Digitais. Todos os direitos reservados.</p>
           <a href={demoUrl} target="_blank" rel="noreferrer">Ver demonstração</a>
         </div>
