@@ -1,21 +1,25 @@
-# Nivor Cardápio Digital — Landing Page
+# Nivor Cardápio Digital — Landing Next.js
 
-Estrutura pronta para deploy estático na Vercel.
+Projeto em **Next.js 15 + React 19 + TypeScript**, pronto para GitHub e Vercel.
 
-## Estrutura
-- `index.html` — landing page principal
-- `acesso/index.html` — página de entrega/ativação para a Eduzz
-- `assets/css/styles.css` — estilos
-- `assets/js/app.js` — JavaScript
-- `assets/images/` — imagens e logo
-- `robots.txt` — regras para buscadores
-- `vercel.json` — configuração do deploy e cabeçalhos de segurança
+## Rotas
+- `/` — landing page comercial
+- `/acesso` — página oficial de entrega/ativação para a Eduzz
 
-## Deploy na Vercel
-Envie a pasta inteira para um repositório GitHub e importe o repositório na Vercel. Não é necessário comando de build: é um site estático.
+## Rodar localmente
+```bash
+npm install
+npm run dev
+```
+Abra `http://localhost:3000`.
 
-## URL para a Eduzz
-Depois do deploy, use `https://SEU-DOMINIO/acesso/` como URL de entrega customizada.
+## Build
+```bash
+npm run build
+```
 
-## Próximo ajuste
-Quando o checkout da Eduzz estiver disponível, troque o CTA da landing pelo link oficial do checkout.
+## Variáveis
+Copie `.env.example` para `.env.local` quando quiser configurar URL final/checkout.
+
+## Deploy
+Importe o repositório na Vercel. O framework será detectado automaticamente como Next.js.
