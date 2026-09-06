@@ -4,8 +4,8 @@ import { ArrowRight, BarChart3, Check, ChevronRight, Clock3, LayoutDashboard, Me
 import { ScreenCard } from "@/components/ScreenCard";
 
 const demoUrl = "https://cardapio-digital-eight-sigma.vercel.app/nivor-buguer";
-const checkoutUrl = process.env.NEXT_PUBLIC_CHECKOUT_URL || "#plano";
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://nivor-cardapio.vercel.app";
+const checkoutUrl = process.env.NEXT_PUBLIC_CHECKOUT_URL || "https://chk.eduzz.com/39YND16DWO";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://nivor-leading-page.vercel.app";
 
 
 const features: Array<{ icon: LucideIcon; title: string; text: string }> = [
@@ -195,7 +195,7 @@ export default function Home() {
               <li><Check /> Cardápio digital responsivo</li><li><Check /> Painel administrativo</li><li><Check /> Produtos e categorias</li><li><Check /> Atualização de preços e disponibilidade</li><li><Check /> Fluxo de pedidos</li><li><Check /> Sem taxa de implantação</li><li><Check /> Cancele quando quiser</li>
             </ul>
             <Link href={checkoutUrl} className="button button-primary button-wide">Quero começar agora <ArrowRight size={19} /></Link>
-            {!process.env.NEXT_PUBLIC_CHECKOUT_URL && <small className="checkout-note">Checkout será conectado quando a oferta for cadastrada na plataforma.</small>}
+            {checkoutUrl === "#plano" && <small className="checkout-note">Checkout será conectado quando a oferta for cadastrada na plataforma.</small>}
           </div>
         </div>
       </section>
