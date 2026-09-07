@@ -5,6 +5,9 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://nivor-leading-page.
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+verification: {
+  google: "Op-ax9KwARIR4Y0mXqgSo9OIofhspZpoJ4l4cErxmYY",
+},
   title: {
     default: "Nivor Cardápio Digital | Cardápio online para vender pelo WhatsApp",
     template: "%s | Nivor",
