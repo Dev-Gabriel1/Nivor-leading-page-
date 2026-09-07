@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, BarChart3, Check, ChevronRight, Clock3, LayoutDashboard, MessageCircle, PackageOpen, Palette, Search, ShoppingBag, Smartphone, Sparkles, Tags, Zap, type LucideIcon } from "lucide-react";
 import { ScreenCard } from "@/components/ScreenCard";
 
-<meta name="google-site-verification" content="KcWHZa0amH1E1jY7zz_ZsBtxiE1N6PzJNG2DazitxOU" />
+
 
 
 
