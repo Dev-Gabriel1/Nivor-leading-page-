@@ -3,6 +3,10 @@ import Link from "next/link";
 import { ArrowRight, BarChart3, Check, ChevronRight, Clock3, LayoutDashboard, MessageCircle, PackageOpen, Palette, Search, ShoppingBag, Smartphone, Sparkles, Tags, Zap, type LucideIcon } from "lucide-react";
 import { ScreenCard } from "@/components/ScreenCard";
 
+<meta name="google-site-verification" content="KcWHZa0amH1E1jY7zz_ZsBtxiE1N6PzJNG2DazitxOU" />
+
+
+
 const demoUrl = "https://cardapio-digital-eight-sigma.vercel.app/nivor-buguer";
 const checkoutUrl = process.env.NEXT_PUBLIC_CHECKOUT_URL || "https://chk.eduzz.com/39YND16DWO";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://nivor-leading-page.vercel.app";
